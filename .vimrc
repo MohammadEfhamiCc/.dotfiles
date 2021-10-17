@@ -1,17 +1,22 @@
 syntax on
-"set termguicolors
-colorscheme peachpuff
+set termguicolors
+colorscheme default
+set background=dark
 set ruler
 set number
 set wildmenu 
-set shiftwidth=8
+set shiftwidth=1
 set showcmd
 set showmode
 set hlsearch
 set ignorecase
 set incsearch
 set nowrapscan
-highlight Comment ctermfg=green
+
+highlight Comment guifg=green
+highlight Search guifg=white guibg=#555555
+highlight Visual guifg=black
+highlight StatusLine guifg=green
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vim plugin manager

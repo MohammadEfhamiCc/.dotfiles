@@ -20,6 +20,10 @@ set mouse=a
 set scrolloff=0
 set sidescroll=1
 set nowrap
+set backup
+set backupext=.bak
+set backupdir=/home/mohammadefhamisisi/Work/backup_files/
+set writebackup
 
 " start of mapping
 map \p bi(<Esc>ea)<Esc>

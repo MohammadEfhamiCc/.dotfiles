@@ -24,6 +24,9 @@ set backup
 set backupext=.bak
 set backupdir=/home/mohammadefhamisisi/Work/backup_files/
 set writebackup
+set statusline=2
+set splitbelow
+set splitright
 
 " start of mapping
 map \p bi(<Esc>ea)<Esc>
@@ -48,7 +51,13 @@ highlight Comment guifg=green
 highlight Search guifg=#FFB830 guibg=#86340A
 highlight Visual guifg=black
 highlight StatusLine guifg=green
-highlight ErrorMsg guifg=black guibg=#FF0000
+highlight VertSplit guifg=green guibg=black
+highlight folded guifg=black guibg=#F0A500
+highlight FoldColumn guifg=white guibg=#32502E
+highlight MoreMsg guifg=black guibg=white
+highlight WarningMsg guifg=black guibg=white
+highlight ModeMsg guifg=black guibg=white
+highlight ErrorMsg guifg=black guibg=white
 " end of highlighting section
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

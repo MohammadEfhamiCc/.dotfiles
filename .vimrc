@@ -1,12 +1,20 @@
 let skp_defaults_vim=1
-colorscheme default
-set background=dark
+
+execute pathogen#infect()
+
 syntax enable
-set termguicolors
+let g:solarized_termcolors=16
+"let g:solarized_degrade=0
+let g:solarized_italic=0
+set background=dark
+colorscheme solarized
+
+
+"set termguicolors
 set ruler
 set number
 set wildmenu 
-set shiftwidth=1
+set shiftwidth=2
 set showcmd
 set showmode
 set hlsearch
@@ -47,17 +55,18 @@ filetype plugin indent on
 " end of plugins section
 
 " start of highlighting section
-highlight Comment guifg=green
-highlight Search guifg=#FFB830 guibg=#86340A
-highlight Visual guifg=black
-highlight StatusLine guifg=green
-highlight VertSplit guifg=green guibg=black
-highlight folded guifg=black guibg=#F0A500
-highlight FoldColumn guifg=white guibg=#32502E
-highlight MoreMsg guifg=black guibg=white
-highlight WarningMsg guifg=black guibg=white
-highlight ModeMsg guifg=black guibg=white
-highlight ErrorMsg guifg=black guibg=white
+"highlight Comment guifg=green
+"highlight Search guifg=black guibg=white
+"highlight Visual guifg=black
+"highlight StatusLine guifg=green
+"highlight VertSplit guifg=green guibg=black
+"highlight folded guifg=black guibg=#F0A500
+"highlight FoldColumn guifg=white guibg=#32502E
+"highlight MoreMsg guifg=black guibg=white
+"highlight WarningMsg guifg=black guibg=white
+"highlight ModeMsg guifg=black guibg=white
+"highlight ErrorMsg guifg=black guibg=white
+"highlight MatchParen guifg=black guibg=white
 " end of highlighting section
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -66,6 +75,6 @@ highlight ErrorMsg guifg=black guibg=white
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
 " - Avoid using standard Vim directory names like 'plugin'
-call plug#begin('~/.vim/plugged')
+"call plug#begin('~/.vim/plugged')
 
-call plug#end()
+"call plug#end()
